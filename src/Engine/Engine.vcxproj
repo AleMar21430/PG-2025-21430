@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Header.cpp" />
+    <ClCompile Include="Source\Rendering.cpp" />
+    <ClCompile Include="Source\3D_Camera.cpp" />
+    <ClCompile Include="Source\Nodes\Cast\Break\Break_Vec2.cpp" />
+    <ClCompile Include="Source\Nodes\Cast\Make\Make_Color.cpp" />
+    <ClCompile Include="Source\Nodes\Cast\Make\Make_Quat.cpp" />
+    <ClCompile Include="Source\Nodes\Cast\Make\Make_Mat2.cpp" />
+    <ClCompile Include="Source\Nodes\Cast\Make\Make_Mat3.cpp" />
+    <ClCompile Include="Source\Nodes\Cast\Make\Make_Mat4.cpp" />
+    <ClCompile Include="Source\Nodes\Cast\Convert\I64_To_F64.cpp" />
+    <ClCompile Include="Source\Nodes\Singleton\Init.cpp" />
+    <ClCompile Include="Source\Nodes\Container\List\Create.cpp" />
+    <ClCompile Include="Source\Nodes\Exec\Loop\For.cpp" />
+    <ClCompile Include="Source\Nodes\Container\List\Modify.cpp" />
+    <ClCompile Include="Source\Nodes\Container\List\Access.cpp" />
+    <ClCompile Include="Source\Nodes\Container\List\Clear.cpp" />
+    <ClCompile Include="Source\Nodes\Container\List\Insert.cpp" />
+    <ClCompile Include="Source\Nodes\Container\List\Push.cpp" />
+    <ClCompile Include="Source\Nodes\Container\List\Remove.cpp" />
+    <ClCompile Include="Source\Nodes\Container\List\Size.cpp" />
+    <ClCompile Include="Source\Nodes\Singleton\Camera_2D.cpp" />
+    <ClCompile Include="Source\Nodes\Singleton\Camera_3D.cpp" />
+    <ClCompile Include="Source\Nodes\Hook\Display.cpp" />
+    <ClCompile Include="Source\Nodes\Hook\Input\Mouse.cpp" />
+    <ClCompile Include="Source\Nodes\Hook\Input\Key.cpp" />
+    <ClCompile Include="Source\Nodes\Hook\Input\Mouse_Pos.cpp" />
+    <ClCompile Include="Source\Nodes\Hook\Input\Mouse_Wheel.cpp" />
+    <ClCompile Include="Source\Nodes\Math\Arithmetic.cpp" />
+    <ClCompile Include="Source\Nodes\Boolean\Compare.cpp" />
+    <ClCompile Include="Source\Nodes\Boolean\Select.cpp" />
+    <ClCompile Include="Source\Nodes\Exec\If.cpp" />
+    <ClCompile Include="Source\Nodes\Exec\If_Else.cpp" />
+    <ClCompile Include="Source\Nodes\Singleton\Background.cpp" />
+    <ClCompile Include="Source\Nodes\Variables\Constant.cpp" />
+    <ClCompile Include="Source\Nodes\Variables\Get.cpp" />
+    <ClCompile Include="Source\Nodes\Variables\Set.cpp" />
+    <ClCompile Include="Source\Nodes\Rendering\2D\Line.cpp" />
+    <ClCompile Include="Source\Nodes\Rendering\2D\Rectangle.cpp" />
+    <ClCompile Include="Source\Nodes\Rendering\2D\Circle.cpp" />
+    <ClCompile Include="Source\Nodes\Singleton\Euler_Tick.cpp" />
+    <ClCompile Include="Source\History_View.cpp" />
+    <ClCompile Include="Source\Input.cpp" />
+    <ClCompile Include="Source\File.cpp" />
+    <ClCompile Include="Source\OpenGL.cpp" />
+    <ClCompile Include="Source\Scripting.cpp" />
+    <ClCompile Include="Source\Nodes.cpp" />
+    <ClCompile Include="Source\Node_Shelf.cpp" />
+    <ClCompile Include="Source\Node.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Source\Node_Editor.cpp" />
+    <ClCompile Include="Source\Session.cpp" />
+    <ClCompile Include="Source\Variable.cpp" />
+    <ClCompile Include="Source\Window.cpp" />
+    <ClCompile Include="Source\Viewport.cpp" />
+    <ClCompile Include="Source\Timeline.cpp" />
+    <ClCompile Include="Source\Variable_Editor.cpp" />
+    <ClCompile Include="Source\Nodes\Exec\Loop\Subsample.cpp" />
+    <ClCompile Include="Source\Nodes\Rendering\2D\Triangle.cpp" />
+    <ClCompile Include="Source\Nodes\Math\Trigonometry.cpp" />
+    <ClCompile Include="Source\Nodes\Exec\Loop\While.cpp" />
+    <ClCompile Include="Source\Nodes\Cast\Make\Make_Vec2.cpp" />
+    <ClCompile Include="Source\Nodes\Cast\Make\Make_Vec3.cpp" />
+    <ClCompile Include="Source\Nodes\Cast\Make\Make_Vec4.cpp" />
+    <ClCompile Include="Source\Nodes\Rendering\3D\Sphere.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\Header.hpp" />
+    <ClInclude Include="Include\3D_Camera.hpp" />
+    <ClInclude Include="Include\Nodes\Cast\Break\Break_Vec2.hpp" />
+    <ClInclude Include="Include\Nodes\Cast\Convert\I64_To_F64.hpp" />
+    <ClInclude Include="Include\Nodes\Container\List\Create.hpp" />
+    <ClInclude Include="Include\Nodes\Exec\Loop\For.hpp" />
+    <ClInclude Include="Include\Nodes\Container\List\Access.hpp" />
+    <ClInclude Include="Include\Nodes\Container\List\Clear.hpp" />
+    <ClInclude Include="Include\Nodes\Container\List\Insert.hpp" />
+    <ClInclude Include="Include\Nodes\Container\List\Push.hpp" />
+    <ClInclude Include="Include\Nodes\Container\List\Remove.hpp" />
+    <ClInclude Include="Include\Nodes\Container\List\Size.hpp" />
+    <ClInclude Include="Include\Nodes\Singleton\Camera_2D.hpp" />
+    <ClInclude Include="Include\Nodes\Singleton\Camera_3D.hpp" />
+    <ClInclude Include="Include\Nodes\Hook\Display.hpp" />
+    <ClInclude Include="Include\Nodes\Math\Arithmetic.hpp" />
+    <ClInclude Include="Include\Nodes\Boolean\Compare.hpp" />
+    <ClInclude Include="Include\Nodes\Exec\If.hpp" />
+    <ClInclude Include="Include\Nodes\Exec\If_Else.hpp" />
+    <ClInclude Include="Include\Nodes\Singleton\Background.hpp" />
+    <ClInclude Include="Include\Nodes\Variables\Constant.hpp" />
+    <ClInclude Include="Include\Nodes\Variables\Get.hpp" />
+    <ClInclude Include="Include\Nodes\Rendering\2D\Circle.hpp" />
+    <ClInclude Include="Include\Nodes\Singleton\Euler_Tick.hpp" />
+    <ClInclude Include="Include\History_View.hpp" />
+    <ClInclude Include="Include\File.hpp" />
+    <ClInclude Include="Include\Inline\Templates.hpp" />
+    <ClInclude Include="Include\Inline\Types.hpp" />
+    <ClInclude Include="Include\Node.hpp" />
+    <ClInclude Include="Include\Session.hpp" />
+    <ClInclude Include="Include\Variable.hpp" />
+    <ClInclude Include="Include\Window.hpp" />
+    <ClInclude Include="Include\Node_Editor.hpp" />
+    <ClInclude Include="Include\Node_Shelf.hpp" />
+    <ClInclude Include="Include\Nodes.hpp" />
+    <ClInclude Include="Include\Scripting.hpp" />
+    <ClInclude Include="Include\Viewport.hpp" />
+    <ClInclude Include="Include\OpenGL.hpp" />
+    <ClInclude Include="Include\Timeline.hpp" />
+    <ClInclude Include="Include\Variable_Editor.hpp" />
+    <ClInclude Include="Include\Input.hpp" />
+    <ClInclude Include="Include\Nodes\Exec\Loop\Subsample.hpp" />
+    <ClInclude Include="Include\Nodes\Rendering\2D\Line.hpp" />
+    <ClInclude Include="Include\Nodes\Rendering\2D\Rectangle.hpp" />
+    <ClInclude Include="Include\Nodes\Rendering\2D\Triangle.hpp" />
+    <ClInclude Include="Include\Nodes\Variables\Set.hpp" />
+    <ClInclude Include="Include\Nodes\Boolean\Select.hpp" />
+    <ClInclude Include="Include\Nodes\Math\Trigonometry.hpp" />
+    <ClInclude Include="Include\Nodes\Hook\Input\Key.hpp" />
+    <ClInclude Include="Include\Nodes\Hook\Input\Mouse_Pos.hpp" />
+    <ClInclude Include="Include\Nodes\Hook\Input\Mouse_Wheel.hpp" />
+    <ClInclude Include="Include\Nodes\Hook\Input\Mouse.hpp" />
+    <ClInclude Include="Include\Nodes\Container\List\Modify.hpp" />
+    <ClInclude Include="Include\Nodes\Exec\Loop\While.hpp" />
+    <ClInclude Include="Include\Nodes\Singleton\Init.hpp" />
+    <ClInclude Include="Include\Nodes\Cast\Make\Make_Mat2.hpp" />
+    <ClInclude Include="Include\Nodes\Cast\Make\Make_Mat3.hpp" />
+    <ClInclude Include="Include\Nodes\Cast\Make\Make_Mat4.hpp" />
+    <ClInclude Include="Include\Nodes\Cast\Make\Make_Vec2.hpp" />
+    <ClInclude Include="Include\Nodes\Cast\Make\Make_Vec3.hpp" />
+    <ClInclude Include="Include\Nodes\Cast\Make\Make_Vec4.hpp" />
+    <ClInclude Include="Include\Nodes\Cast\Make\Make_Color.hpp" />
+    <ClInclude Include="Include\Nodes\Cast\Make\Make_Quat.hpp" />
+    <ClInclude Include="Include\Rendering.hpp" />
+    <ClInclude Include="Include\Nodes\Rendering\3D\Sphere.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1332ED0C-C278-459F-AD7A-E0FA3A4AB951}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.22621.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>ClangCL</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtModules>core;gui;widgets;opengl;openglwidgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+    <QtDeploy>true</QtDeploy>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtModules>core;gui;widgets;opengl;openglwidgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+    <QtDeploy>true</QtDeploy>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)\Include;D:\Coding\KL\KL\Include;D:\Coding\KL\KL-GUI\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)\Include;D:\Coding\KL\KL\Include;D:\Coding\KL\KL-GUI\Include;$(IncludePath)</IncludePath>
+    <LinkIncremental>
+    </LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnabled>false</VcpkgEnabled>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;ENGINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Programs\Coding\Lib\glm 0.9.9.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Coding\KL\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>KL.lib;KL-GUI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+msbuild "$(SolutionDir)/Simulator.sln" /v:minimal /t:Script /p:Configuration=$(Configuration) /p:Platform=$(Platform)
+
+msbuild "$(SolutionDir)/Simulator.sln" /v:minimal /t:Script-GUI-Fps /p:Configuration=$(Configuration) /p:Platform=$(Platform)
+msbuild "$(SolutionDir)/Simulator.sln" /v:minimal /t:Script-Camera-Controller /p:Configuration=$(Configuration) /p:Platform=$(Platform)
+
+msbuild "$(SolutionDir)/Simulator.sln" /v:minimal /t:Script-Boid-Showcase /p:Configuration=$(Configuration) /p:Platform=$(Platform)
+msbuild "$(SolutionDir)/Simulator.sln" /v:minimal /t:Script-Newtons-Cradle /p:Configuration=$(Configuration) /p:Platform=$(Platform)
+msbuild "$(SolutionDir)/Simulator.sln" /v:minimal /t:Script-Particle-Showcase /p:Configuration=$(Configuration) /p:Platform=$(Platform)
+msbuild "$(SolutionDir)/Simulator.sln" /v:minimal /t:Script-SVG-Art-Showcase /p:Configuration=$(Configuration) /p:Platform=$(Platform)
+msbuild "$(SolutionDir)/Simulator.sln" /v:minimal /t:Script-Controllable-Object-Showcase /p:Configuration=$(Configuration) /p:Platform=$(Platform)
+
+msbuild "$(SolutionDir)/Simulator.sln" /v:minimal /t:Script-Port-List /p:Configuration=$(Configuration) /p:Platform=$(Platform)
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>"lib.exe" /out:"$(OutDir)/Engine.lib" "$(IntermediateOutputPath)*.obj"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;ENGINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 -Wno-unused-command-line-argument %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Programs\Coding\Lib\glm 0.9.9.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Coding\KL\x64\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>KL.lib;KL-GUI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+msbuild "$(SolutionDir)/Simulator.sln" /v:minimal /t:Script /p:Configuration=$(Configuration) /p:Platform=$(Platform)
+
+msbuild "$(SolutionDir)/Simulator.sln" /v:minimal /t:Script-GUI-Fps /p:Configuration=$(Configuration) /p:Platform=$(Platform)
+msbuild "$(SolutionDir)/Simulator.sln" /v:minimal /t:Script-Camera-Controller /p:Configuration=$(Configuration) /p:Platform=$(Platform)
+
+msbuild "$(SolutionDir)/Simulator.sln" /v:minimal /t:Script-Boid-Showcase /p:Configuration=$(Configuration) /p:Platform=$(Platform)
+msbuild "$(SolutionDir)/Simulator.sln" /v:minimal /t:Script-Newtons-Cradle /p:Configuration=$(Configuration) /p:Platform=$(Platform)
+msbuild "$(SolutionDir)/Simulator.sln" /v:minimal /t:Script-Particle-Showcase /p:Configuration=$(Configuration) /p:Platform=$(Platform)
+msbuild "$(SolutionDir)/Simulator.sln" /v:minimal /t:Script-SVG-Art-Showcase /p:Configuration=$(Configuration) /p:Platform=$(Platform)
+msbuild "$(SolutionDir)/Simulator.sln" /v:minimal /t:Script-Controllable-Object-Showcase /p:Configuration=$(Configuration) /p:Platform=$(Platform)
+
+msbuild "$(SolutionDir)/Simulator.sln" /v:minimal /t:Script-Port-List /p:Configuration=$(Configuration) /p:Platform=$(Platform)
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>"lib.exe" /out:"$(OutDir)/Engine.lib" "$(IntermediateOutputPath)*.obj"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

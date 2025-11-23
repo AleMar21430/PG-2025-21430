@@ -1,0 +1,131 @@
+┌Header
+ Version 0.0.1
+└Header
+┌Scripts( 3 )
+ ┌Script [ 0 ]
+  * 1889322863904
+ └Script
+ ┌Script [ 1 ]
+  * 1887691978704
+ └Script
+ ┌Script [ 2 ]
+  * 1887691828192
+ └Script
+└Scripts
+┌Variables( 0 )
+└Variables
+┌Node-Groups( 0 )
+└Node-Groups
+┌Node-Tree( 6 )
+ ┌Node [ 0 ] Tick
+  * 1889325728976
+  Type SINGLETON::EULER_TICK
+  ( -400 -100 )
+  ┌In( 0 )
+  └In
+  ┌Out( 4 )
+   * 1889325720224
+   * 1887691837984
+   * 1887691827920
+   * 1887691826560
+  └Out
+  ┌Data
+  └Data
+ └Node
+ ┌Node [ 1 ] Camera Controller
+  * 1889322863904
+  Type SCRIPT
+  ( -240 -100 )
+  ┌In( 1 )
+   * 1887691779696
+  └In
+  ┌Out( 1 )
+   * 1889325717984
+  └Out
+  ┌Data
+   ./Script-Camera-Controller.dll
+  └Data
+ └Node
+ ┌Node [ 2 ] GUI
+  * 1887691978704
+  Type SCRIPT
+  ( -400 -200 )
+  ┌In( 0 )
+  └In
+  ┌Out( 0 )
+  └Out
+  ┌Data
+   ./Script-GUI-Fps.dll
+  └Data
+ └Node
+ ┌Node [ 3 ] SVG Renderer
+  * 1887691828192
+  Type SCRIPT
+  ( 0 -100 )
+  ┌In( 3 )
+   * 1887691774896
+   * 1889322872608
+   * 1889322867744
+  └In
+  ┌Out( 1 )
+   * 1889325725152
+  └Out
+  ┌Data
+   ./Script-SVG-Art-Showcase.dll
+  └Data
+ └Node
+ ┌Node [ 4 ] Constant
+  * 1889324552640
+  Type VARIABLE::CONSTANT
+  ( -200 -30 )
+  ┌In( 0 )
+  └In
+  ┌Out( 1 )
+   * 1887691839072
+  └Out
+  ┌Data
+   Type DOUBLE :: NONE 200
+  └Data
+ └Node
+ ┌Node [ 5 ] Constant
+  * 1889324556160
+  Type VARIABLE::CONSTANT
+  ( -260 40 )
+  ┌In( 0 )
+  └In
+  ┌Out( 1 )
+   * 1887691832816
+  └Out
+  ┌Data
+   Type STRING :: NONE D:\Coding\Simulator\Script-SVG-Art-Showcase\JapaneseGeneral.svg
+  └Data
+ └Node
+└Node-Tree
+┌Build
+ ┌Node-Data
+  * 1887691839072 - * 1889322872608
+ └Node-Data
+ ┌Node-Exec
+  * 1889325720224 - * 1887691779696
+  * 1889325717984 - * 1887691774896
+ └Node-Exec
+└Build
+┌Background**
+#version 460 core
+
+uniform float iTime;
+uniform int   iFrame;
+uniform float iTimeDelta;
+uniform vec2  iResolution;
+
+uniform float uZoom;
+uniform vec2  uCenter;
+
+in vec2 vTexCoord;
+
+out vec4 fragColor;
+
+void main() {
+	fragColor = vec4(0.0);
+}
+└Background**

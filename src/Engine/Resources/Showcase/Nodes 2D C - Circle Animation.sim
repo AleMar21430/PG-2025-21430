@@ -1,0 +1,196 @@
+┌Header
+ Version 0.0.1
+└Header
+┌Scripts( 1 )
+ ┌Script [ 0 ]
+  * 2691534914752
+ └Script
+└Scripts
+┌Variables( 0 )
+└Variables
+┌Node-Groups( 0 )
+└Node-Groups
+┌Node-Tree( 10 )
+ ┌Node [ 0 ] Circle
+  * 2691536884016
+  Type RENDERING::2D::CIRCLE
+  ( 300 -100 )
+  ┌In( 4 )
+   * 2691536826112
+   * 2691314085280
+   * 2691314085792
+   * 2691314087328
+  └In
+  ┌Out( 1 )
+   * 2691536883552
+  └Out
+  ┌Data
+  └Data
+ └Node
+ ┌Node [ 1 ] Tick
+  * 2691536882672
+  Type SINGLETON::EULER_TICK
+  ( -400 -100 )
+  ┌In( 0 )
+  └In
+  ┌Out( 4 )
+   * 2691536884448
+   * 2691531739040
+   * 2691531742848
+   * 2691531742576
+  └Out
+  ┌Data
+  └Data
+ └Node
+ ┌Node [ 2 ] Trigonometry
+  * 2691531852560
+  Type MATH::TRIGONOMETRIC
+  ( -200 60 )
+  ┌In( 1 )
+   * 2691314087840
+  └In
+  ┌Out( 1 )
+   * 2691531746112
+  └Out
+  ┌Data
+   SIN
+  └Data
+ └Node
+ ┌Node [ 3 ] Trigonometry
+  * 2691531859632
+  Type MATH::TRIGONOMETRIC
+  ( -200 -20 )
+  ┌In( 1 )
+   * 2691314086560
+  └In
+  ┌Out( 1 )
+   * 2691531736592
+  └Out
+  ┌Data
+   COS
+  └Data
+ └Node
+ ┌Node [ 4 ] Arithmetic
+  * 2691536885808
+  Type MATH::ARITHMETIC
+  ( 0 -20 )
+  ┌In( 2 )
+   * 2691314085536
+   * 2691314086048
+  └In
+  ┌Out( 1 )
+   * 2691531736048
+  └Out
+  ┌Data
+   A*B
+  └Data
+ └Node
+ ┌Node [ 5 ] Arithmetic
+  * 2691536885584
+  Type MATH::ARITHMETIC
+  ( 0 60 )
+  ┌In( 2 )
+   * 2691314086304
+   * 2691314088608
+  └In
+  ┌Out( 1 )
+   * 2691531740944
+  └Out
+  ┌Data
+   A*B
+  └Data
+ └Node
+ ┌Node [ 6 ] Constant
+  * 2691317379424
+  Type VARIABLE::CONSTANT
+  ( -200 140 )
+  ┌In( 0 )
+  └In
+  ┌Out( 1 )
+   * 2691531744208
+  └Out
+  ┌Data
+   Type DOUBLE :: NONE 30
+  └Data
+ └Node
+ ┌Node [ 7 ] Make
+  * 2691531852768
+  Type CAST::MAKE::VEC2
+  ( 200 -20 )
+  ┌In( 2 )
+   * 2691314087072
+   * 2691534911936
+  └In
+  ┌Out( 1 )
+   * 2691531740400
+  └Out
+  ┌Data
+  └Data
+ └Node
+ ┌Node [ 8 ] Camera Controller
+  * 2691534914752
+  Type SCRIPT
+  ( -200 -100 )
+  ┌In( 1 )
+   * 2691536889920
+  └In
+  ┌Out( 1 )
+   * 2691536882432
+  └Out
+  ┌Data
+   ./Script-Camera-Controller.dll
+  └Data
+ └Node
+ ┌Node [ 9 ] Constant
+  * 2691317379776
+  Type VARIABLE::CONSTANT
+  ( 100 -160 )
+  ┌In( 0 )
+  └In
+  ┌Out( 1 )
+   * 2691531751280
+  └Out
+  ┌Data
+   Type DOUBLE :: NONE 5
+  └Data
+ └Node
+└Node-Tree
+┌Build
+ ┌Node-Data
+  * 2691531740400 - * 2691314085280
+  * 2691531751280 - * 2691314085792
+  * 2691531742576 - * 2691314087840
+  * 2691531742576 - * 2691314086560
+  * 2691531736592 - * 2691314085536
+  * 2691531744208 - * 2691314086048
+  * 2691531746112 - * 2691314086304
+  * 2691531744208 - * 2691314088608
+  * 2691531736048 - * 2691314087072
+  * 2691531740944 - * 2691534911936
+ └Node-Data
+ ┌Node-Exec
+  * 2691536884448 - * 2691536889920
+  * 2691536882432 - * 2691536826112
+ └Node-Exec
+└Build
+┌Background**
+#version 460 core
+
+uniform float iTime;
+uniform int   iFrame;
+uniform float iTimeDelta;
+uniform vec2  iResolution;
+
+uniform float uZoom;
+uniform vec2  uCenter;
+
+in vec2 vTexCoord;
+
+out vec4 fragColor;
+
+void main() {
+	vec2 fragCoord = gl_FragCoord.xy;
+
+	fragColor = vec4(0.0, 0.0, 0.0, 1.0);
+}
+└Background**
